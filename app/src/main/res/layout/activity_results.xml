@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        tools:context=".SearchResults">
+
+        <TextView
+            android:id="@+id/endOfPageMusicianProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aLine5"
+            tools:text="@string/end_of_page" />
+
+        <ImageView
+            android:id="@+id/pMatchImage1"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/no_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/pMatchBut1"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="See Profile"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/pMatchImage1"
+            app:layout_constraintStart_toStartOf="@+id/pMatchImage1"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchImage1" />
+
+        <TextView
+            android:id="@+id/pMatchName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Display Name" />
+
+        <TextView
+            android:id="@+id/pMatchMilesAway1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage1"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchName1"
+            tools:text="5 miles away" />
+
+        <TextView
+            android:id="@+id/pMatchInf1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="5"
+            android:singleLine="false"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage1"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchMilesAway1"
+            tools:text="You both like: \n\nHole Dweller, Godspeed You! Black Emperor, Neutral Milk Hotel, Fen Walker" />
+
+        <TextView
+            android:id="@+id/pMatchGen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="3"
+            android:singleLine="false"
+            app:layout_constraintStart_toStartOf="@+id/pMatchInf1"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchInf1"
+            tools:text="Punk, Indie, Electronic" />
+
+        <TextView
+            android:id="@+id/aLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="------------------------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchGen1" />
+
+        <ImageView
+            android:id="@+id/pMatchImage2"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/no_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aLine1"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/pMatchName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage2"
+            app:layout_constraintTop_toBottomOf="@+id/aLine1"
+            tools:text="Display Name" />
+
+
+        <Button
+            android:id="@+id/pMatchBut2"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="See Profile"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/pMatchImage2"
+            app:layout_constraintStart_toStartOf="@+id/pMatchImage2"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchImage2" />
+
+
+        <TextView
+            android:id="@+id/pMatchMilesAway2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage2"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchName2"
+            tools:text="7 miles away" />
+
+        <TextView
+            android:id="@+id/pMatchInf2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="5"
+            android:singleLine="false"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage2"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchMilesAway2"
+            tools:text="You both like: \n\nNeutral Milk Hotel, Fen Walker" />
+
+        <TextView
+            android:id="@+id/pMatchGen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="3"
+            android:singleLine="false"
+            app:layout_constraintStart_toStartOf="@+id/pMatchInf2"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchInf2"
+            tools:text="Punk, Indie" />
+
+        <TextView
+            android:id="@+id/aLine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="------------------------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchGen2" />
+
+        <ImageView
+            android:id="@+id/pMatchImage3"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/no_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aLine2"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/pMatchName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage3"
+            app:layout_constraintTop_toBottomOf="@+id/aLine2"
+            tools:text="Display Name" />
+
+
+        <Button
+            android:id="@+id/pMatchBut3"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="See Profile"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/pMatchImage3"
+            app:layout_constraintStart_toStartOf="@+id/pMatchImage3"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchImage3" />
+
+
+        <TextView
+            android:id="@+id/pMatchMilesAway3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage3"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchName3"
+            tools:text="8 miles away" />
+
+        <TextView
+            android:id="@+id/pMatchInf3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="5"
+            android:singleLine="false"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage3"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchMilesAway3"
+            tools:text="You both like: \n\nNeutral Milk Hotel, Fen Walker" />
+
+        <TextView
+            android:id="@+id/pMatchGen3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="3"
+            android:singleLine="false"
+            app:layout_constraintStart_toStartOf="@+id/pMatchInf3"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchInf3"
+            tools:text="Punk" />
+
+        <TextView
+            android:id="@+id/aLine3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="------------------------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchGen3" />
+
+        <ImageView
+            android:id="@+id/pMatchImage4"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/no_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aLine3"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/pMatchName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage4"
+            app:layout_constraintTop_toBottomOf="@+id/aLine3"
+            tools:text="Display Name" />
+
+
+        <Button
+            android:id="@+id/pMatchBut4"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="See Profile"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/pMatchImage4"
+            app:layout_constraintStart_toStartOf="@+id/pMatchImage4"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchImage4" />
+
+
+        <TextView
+            android:id="@+id/pMatchMilesAway4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage4"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchName4"
+            tools:text="8 miles away" />
+
+        <TextView
+            android:id="@+id/pMatchInf4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="5"
+            android:singleLine="false"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage4"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchMilesAway4"
+            tools:text="You both like: \n\nNeutral Milk Hotel" />
+
+        <TextView
+            android:id="@+id/pMatchGen4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="3"
+            android:singleLine="false"
+            app:layout_constraintStart_toStartOf="@+id/pMatchInf4"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchInf4"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/aLine4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="------------------------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchGen4" />
+
+        <ImageView
+            android:id="@+id/pMatchImage5"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/no_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aLine4"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/pMatchName5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage5"
+            app:layout_constraintTop_toBottomOf="@+id/aLine4"
+            tools:text="Display Name" />
+
+
+        <Button
+            android:id="@+id/pMatchBut5"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="See Profile"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/pMatchImage5"
+            app:layout_constraintStart_toStartOf="@+id/pMatchImage5"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchImage5" />
+
+
+        <TextView
+            android:id="@+id/pMatchMilesAway5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage5"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchName5"
+            tools:text="8 miles away" />
+
+        <TextView
+            android:id="@+id/pMatchInf5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="5"
+            android:singleLine="false"
+            app:layout_constraintStart_toEndOf="@+id/pMatchImage5"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchMilesAway5"
+            tools:text="You both like: \n\n No matches" />
+
+        <TextView
+            android:id="@+id/pMatchGen5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxEms="13"
+            android:maxLines="3"
+            android:singleLine="false"
+            app:layout_constraintStart_toStartOf="@+id/pMatchInf5"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchInf5"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/aLine5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="------------------------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pMatchGen5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
