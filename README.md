@@ -1,13 +1,19 @@
 # BandPal
-An Android social media app that allows musicians to meet and form bands within their local area.
+An Android social media app that allows musicians to meet and form bands within their local area. BandPal allows users to fill their profile with their musical passions then find (and be found by) those who share those interests.
+
+BandPal was my dissertation project submitted for my Computer Science MSc at the University of Birmingham.
 
 ## Overview
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta turpis at leo tempor, nec rhoncus nulla euismod. Nunc nec interdum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque et tristique nunc. Morbi at quam at dolor egestas bibendum. Quisque sollicitudin, dolor at mattis pulvinar, dolor enim interdum ipsum, eget interdum diam ligula id dui. Donec mi lectus, tempor quis arcu tristique, pharetra aliquet elit. Praesent tempus id leo nec suscipit. Phasellus lobortis est eget tortor viverra, at cursus odio imperdiet.
+Centered around a search and match ‘points-based’ algorithm, BandPal takes a user’s influences (via LastFM artists API), instruments (via MusicBrainz’s instruments API), location (via Google Maps API), age and search-radius to produce likeminded local matches to be connected and chatted with in-app.
+
+The app utilises gamification elements in the form of a trophy system. Trophies are rewards for building a full profile and using BandPal to its full potential. The more trophies the higher a user appears in searches and the more likely they are to find accurate matches.
+
+Go to the ‘info’ folder for a full report on the app’s development and features, as well as videos of common user journeys.
 
 ### Tools
 - Kotlin (back and frontend) and (a v.small amount of) server-side JavaScript for device-to-device notifications
 - Developed in Android Studio
-- Google Firebase for database
+- Uses Google Firebase for database
 - Incorporates LastFM, MusicBrainz and Google Maps APIs
 - Allows login via pre-existing Google and Facebook accounts
