@@ -1,5 +1,5 @@
 # BandPal
-An Android social media app that allows musicians to meet and form bands within their local area. BandPal allows users to fill their profile with their musical passions then find (and be found by) those who share those interests.
+An Android social media app that allows musicians to meet and form bands within their local area. With BandPal, users can fill their profile with their musical passions then find (and be found by) those who share those passions.
 
 BandPal was my dissertation project submitted for my Computer Science MSc at the University of Birmingham.
 
